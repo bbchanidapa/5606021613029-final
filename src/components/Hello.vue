@@ -1,15 +1,13 @@
 <template>
   <div class="hello">
    <div class="container">
-   
-   <div class="columns is-multiline">
 
             <div v-for="(index,i) in show">
               {{i+1}}). วิชา: {{index['subject']}} 
               เกรด: {{index['grade']}} 
               หน่วยกิต : {{index['unit']}} 
             </div><br>
-            <div class="column is-1">
+   
             วิชา <input v-model="subject" placeholder="ชื่อวิชา">
            
             เกรด 
@@ -40,9 +38,6 @@
            <div v-if="unitTotal > 0">เฉลี่ยรวม : {{unitTotal}}</div> 
           </div>
 
-
-         </div> 
-    </div>
 </div>
 
 
